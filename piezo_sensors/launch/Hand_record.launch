@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="piezo_sensors" name="Hand" type="Hand.py"/>
+    <node pkg="piezo_sensors" name="Recorder" type="Recorder.py"/>
+</launch>

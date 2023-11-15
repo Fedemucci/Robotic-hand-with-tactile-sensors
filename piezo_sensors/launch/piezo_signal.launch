@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="piezo_sensors" name="Publisher" type="pub_serial.py"/>
+    <node pkg="piezo_sensors" name="Tarer" type="Tarer.py"/>
+</launch>
