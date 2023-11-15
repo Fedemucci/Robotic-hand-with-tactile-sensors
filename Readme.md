@@ -11,7 +11,7 @@ The controlled hand has three sensors applied on Thumb, Index and Ring fingers, 
 
 
 ***
-##SOFTWARE DESCRIPTION
+## SOFTWARE DESCRIPTION
 * **pub_serial.py**
 This node reads the data from sensors,unpack them and then publishes the signal f each finger.
 When publishing, it subtracts the mean values to the raw data values, making a tare.
@@ -111,7 +111,7 @@ This program can be used to visualize the acquire data, to do that copy the dire
 
 
 ***
-##HOW TO RUN
+## HOW TO RUN
 > First check to have installed all the needed dependencies
 > Create the workspace folder 
 > Open terminal, select working directory, create src folder and enter it
