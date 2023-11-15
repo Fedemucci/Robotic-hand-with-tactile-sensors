@@ -38,6 +38,7 @@ Publish on:	Mean_T, Mean_I, Mean_R
 Subscribed to:	Thumb, Index, Ring
 
 Services:
+
 'tare'		input: number of datas to read before calculating the mean.
 
 
@@ -50,6 +51,7 @@ Publish on:	Set_T, Set_I, Set_R, Pos_T, Pos_I, Pos_R, Velocity
 Subscribed to:	None
 
 Services:
+
 'grasp_initialization'	input:	joints to set, open position
 
 'grasp_routine'			input:	moving fingers, speed values, joints to move, close position, depth
@@ -64,7 +66,9 @@ Publish on:	None
 Subscribed to:	Thumb, Index, Ring, Set_T, Set_I, Set_R, Pos_T, Pos_I, Pos_R, Velocity
 
 Services:
+
 'start_recording'	input: finger to save, save directory
+
 'stop_recording'	input: None
 
 * **Controller.py**
