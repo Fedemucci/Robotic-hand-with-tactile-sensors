@@ -120,9 +120,9 @@ $ cd ~/AR10_piezosensors_ws/
 $ mkdir src
 $ cd src
 ```
-> Copy all the files using [git clone]( https://github.com/) in src
+> Copy all the files using [git clone](https://github.com/Fedemucci/Robotic-hand-with-tactile-sensors.git) in src
 ``` 
-$ git clone https://github.com/....
+$ git clone https://github.com/Fedemucci/Robotic-hand-with-tactile-sensors.git
 ```
 > Build the package from workspace directory
 ```
