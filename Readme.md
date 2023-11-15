@@ -65,7 +65,7 @@ This node calls the services from the other nodes to make acquisitions. It has t
 24      self.q_depth = 100                            	#! offset subtracted to the max value of the joints in close position ...
 25      self.dataset_dir = ''                         	# ... to achieve different pressure levels
 
-51	self.dataset_dir = '/home/lar03/ros/AR10_piezosensors_ws/Dataset'	#!change with the path of the directory where to save the dataset
+51	self.dataset_dir = '/home/lar03/ros/catkin_ws/Dataset'	#!change with the path of the directory where to save the dataset
 
 89	#         T I R
 90	Ctrl.run([1,1,1])	#!select finger (1: active, 0: inactive)
@@ -107,7 +107,7 @@ This program can be used to visualize the acquire data, to do that copy the dire
 > settings
 
 5	start_dir= '/home/lar03/ros/'     #!Change this with the folder the workspace is in
-6	copied_dir= 'AR10_piezosensors_ws/Dataset/Dataset_T_5530_8000_7300_2'  #!Change with the path of the folder you want to plot
+6	copied_dir= 'catkin_ws/Dataset/Dataset_T_5530_8000_7300_2'  #!Change with the path of the folder you want to plot
 
 
 ***
@@ -116,7 +116,8 @@ This program can be used to visualize the acquire data, to do that copy the dire
 > Create the workspace folder 
 > Open terminal, select working directory, create src folder and enter it
 ```
-$ cd ~/AR10_piezosensors_ws/
+$ mkdir catkin_ws
+$ cd ~/catkin_ws/
 $ mkdir src
 $ cd src
 ```
