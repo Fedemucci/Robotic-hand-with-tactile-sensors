@@ -17,9 +17,9 @@ The controlled hand has three sensors applied on Thumb, Index and Ring fingers, 
 This node reads the data from sensors,unpack them and then publishes the signal f each finger.
 When publishing, it subtracts the mean values to the raw data values, making a tare.
 
-Publish on:	Thumb, Index, Ring.
+Publish on:	Thumb, Index, Ring
 
-Subscribed to:	Mean_T, Mean_I, Mean_R.
+Subscribed to:	Mean_T, Mean_I, Mean_R
 
 Services: None
 
@@ -33,11 +33,12 @@ Services: None
 
 This node contains the service to update the mean values to do the tare.
 
-Publish on:	Mean_T, Mean_I, Mean_R.
+Publish on:	Mean_T, Mean_I, Mean_R
 
-Subscribed to:	Thumb, Index, Ring.
+Subscribed to:	Thumb, Index, Ring
 
-Services: 	'tare' input: number of datas to read before calculating the mean.
+Services:
+'tare'		input: number of datas to read before calculating the mean.
 
 
 * **Hand.py**
@@ -48,12 +49,12 @@ Publish on:	Set_T, Set_I, Set_R, Pos_T, Pos_I, Pos_R, Velocity
 
 Subscribed to:	None
 
-Services:	'grasp_initialization'	input:	joints to set, open position
+Services:
+'grasp_initialization'	input:	joints to set, open position
 
-			'grasp_routine'		input:	moving fingers, speed values,
-								joints to move, close position, depth
+'grasp_routine'			input:	moving fingers, speed values, joints to move, close position, depth
 
-* **Recorder**
+* **Recorder.py**
 
 This node reads data from all the topics. When the start service is called, it starts storing them.
 When is called the stop one, it save the acquisition.
@@ -62,10 +63,11 @@ Publish on:	None
 
 Subscribed to:	Thumb, Index, Ring, Set_T, Set_I, Set_R, Pos_T, Pos_I, Pos_R, Velocity
 
-Services:	'start_recording'	input: finger to save, save directory
-			'stop_recording'	input: None
+Services:
+'start_recording'	input: finger to save, save directory
+'stop_recording'	input: None
 
-* **Controller**
+* **Controller.py**
 
 This node calls the services from the other nodes to make acquisitions. It has to be customised with the wanted parameters. It creates the saving directory and saves in it a file with parameters.
 
